@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  height: auto;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181717;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.row {
+  max-width: 1920px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.row .col {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.row .col-3 {
+  flex-basis: 25%;
+}
+
+.row .col-4 {
+  flex-basis: 33.333%;
+}
+
+.row .col-6 {
+  flex-basis: 50%;
+}
+
+.row .col-8 {
+  flex-basis: 66.666%;
+}
+
+.row .col-9 {
+  flex-basis: 75%;
+}
+
+.row .col-12 {
+  flex-basis: 100%;
+}
+
+h1 {
+  font-size: 46px;
+  font-weight: 400;
+}
+
+header button {
+  padding: 7px 7px 7px 30px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  font-size: 18px;
+}
+
+header button i {
+  color: white;
+  background-color: #2a2725;
+  padding: 15px;
+  border-radius: 100px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+header button.reserve {
+  position: fixed;
+  z-index: 999;
+  top: 50px;
+  right: 50px;
+}
+
+header button.reserve i {
+  transform: rotate(-45deg);
+}
+
+header button.menu {
+  position: fixed;
+  z-index: 999;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#above-the-fold {
+  height: calc(100vh - 20px);
+  width: calc(100% - 20px);
+  border-radius: 80px;
+  margin: 10px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.above-the-fold-bg {
+  height: 100%;
+  width: 100%;
+  border-radius: 80px;
+  background-image: url(/img/cap1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+}
+
+#above-the-fold .logo {
+  width: 60%;
+  padding-top: 50px;
+}
+
+#above-the-fold .content-row {
+  position: absolute;
+  bottom: 0;
+  padding: 50px;
+  width: 100%;
+}
+
+#above-the-fold .content-row p {
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  right: 0;
+  padding: 50px;
+}
+
+#introduction {
+  padding: 200px 0;
+}
+
+#introduction p {
+  font-size: 90px;
+  color: #2a2725;
+  position: relative;
+}
+
+#introduction p.text-reveal {
+  font-size: 90px;
+  color: #f4efe7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 0px;
+}
+
+#placeholder {
+  min-height: 10000px;
+  background-color: red;
+}
+
+#parallax-text p {
+  min-height: 150px;
+}
+
+#parallax-text span {
+  height: 0;
+  font-size: 140px;
+  font-weight: 400;
+  color: #f4efe7;
+  display: block;
+  overflow: hidden;
+  line-height: 1;
+}
+#marquee {
+  overflow: hidden;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background-color: #181717;
+}
+
+#marquee .row {
+  height: 100vh;
+  width: 100%;
+}
+
+#marquee p {
+  font-size: 180px;
+  font-weight: 600;
+  width: max-content;
+  color: #f4efe7;
+  display: block;
+  overflow: hidden;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-960px, -50%, 0px);
+}
+
+#marquee p span {
+  font-size: 40px;
+}
+
+#marquee .above-the-fold-bg {
+  scale: 0.5;
+  height: calc(100vh - 20px);
+  width: calc(100% - 20px);
+  border-radius: 80px;
+  margin: 10px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.above-the-fold-bg {
+  height: calc(100vh - 20px);
+  width: calc(100% - 20px);
+}
+
+#card-2.cards {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+}
+
+#card-2.cards .row {
+  height: 100vh;
+}
+
+#card-3.cards {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+}
+
+#card-3.cards .row {
+  height: 100vh;
+}
